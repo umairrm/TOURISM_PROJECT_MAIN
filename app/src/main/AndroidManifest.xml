@@ -15,7 +15,6 @@
         <activity android:name=".MapsActivityRawSkardu" />
         <activity android:name=".MapsActivityRawShogran" />
         <activity android:name=".MapsActivityDestinations" />
-        <activity android:name=".MapsActivityHome" />
 
         <meta-data
             android:name="com.google.android.gms.version"

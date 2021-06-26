@@ -44,6 +44,7 @@
             android:padding="5sp"
             android:background="#17CF9B"
             android:textColor="@color/black"
+            android:layout_marginLeft="2sp"
             android:layout_marginRight="2sp"
             android:gravity="center"
             android:textAllCaps="true"
@@ -114,24 +115,6 @@
             tools:context="com.example.project.MapsActivityHome"
             />
     </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/loc_layout"
-        android:layout_below="@id/your_places">
-
-        <Button
-            android:id="@+id/my_loc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="see my location"
-            android:textStyle="bold"
-            tools:context="com.example.project.MapsActivityHome"
-            />
-    </LinearLayout>
-
 
 
 </RelativeLayout>
