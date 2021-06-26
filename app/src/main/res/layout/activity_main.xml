@@ -16,14 +16,6 @@
         android:textColor="@color/black"
         android:layout_marginLeft="10dp"/>
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/tv_proj_name"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="130dp"/>
-
     <TextView
         android:id="@+id/top_dests"
         android:layout_width="wrap_content"
@@ -77,11 +69,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Skardu"
+            android:padding="5sp"
             android:gravity="center"
             android:background="#17CF9B"
             android:textColor="@color/black"
+            android:layout_marginRight="2sp"
             android:textAllCaps="true"
-            android:padding="5sp"
             android:clickable="true"
             android:layout_weight="1"
             />
@@ -99,6 +92,46 @@
             android:clickable="true"
             android:layout_weight="1"
             />
+
+
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/your_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_dests"
+        android:layout_marginTop="60dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/my_dest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choose your destinations"
+            android:textStyle="bold"
+            tools:context="com.example.project.MapsActivityHome"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc_layout"
+        android:layout_below="@id/your_places">
+
+        <Button
+            android:id="@+id/my_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="see my location"
+            android:textStyle="bold"
+            tools:context="com.example.project.MapsActivityHome"
+            />
+    </LinearLayout>
+
+
 
 </RelativeLayout>
